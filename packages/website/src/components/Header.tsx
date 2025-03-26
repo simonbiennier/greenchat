@@ -30,7 +30,7 @@ export function Header() {
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
-              <Button color="slate" href="https://github.com/simonbiennier/greenchat" variant="outline">
+              <Button color="slate" href="https://github.com/simonbiennier/greenchat" variant="outline" rel="noopener noreferrer" target="_blank">
                 GitHub
             </Button>
             </div>
