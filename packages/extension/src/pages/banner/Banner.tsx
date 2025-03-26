@@ -6,23 +6,24 @@ import { createRoot } from "react-dom/client"
 
 interface BannerProps { text: string }
 const Banner: FC<BannerProps> = ({ text }) => {
+  const tokens = countTokens(text)
+
   const handleClick = () => {
-    chrome.runtime.sendMessage("openExtension").catch(console.error)
+    chrome.runtime.sendMessage({
+      type: "openExtension",
+      tokens,
+    }).catch(console.error)
   }
 
   const [isClosed, setIsClosed] = useState(false)
 
   const handleClose = () => {
-    setIsClosed(true) // hide banner when close button is clicked
+    setIsClosed(true)
   }
 
   const handleShowBanner = () => {
-    setIsClosed(false) // show banner when the small button is clicked
+    setIsClosed(false)
   }
-
-  // const ref = useRef<HTMLButtonElement | null>(null);
-
-  const tokens = countTokens(text)
 
   // small round button that appears when the banner is closed
   const Button = (
@@ -63,7 +64,7 @@ const Banner: FC<BannerProps> = ({ text }) => {
                   in this conversation.
                 </div>
                 <div className="text-token-text-secondary">
-                  Visit our website to learn more.
+                  Visit our website to learn how we calculate this.
                 </div>
               </div>
               <div className="flex shrink-0 items-center gap-2">

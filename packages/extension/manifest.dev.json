@@ -2,7 +2,11 @@
   "name": "GreenChat (Dev)",
   "action": {
     "default_popup": "src/pages/popup/index.html",
-    "default_icon": "public/dev-icon-32.png"
+    "default_state": "disabled",
+    "default_icon": {
+      "32": "dev-icon-32.png",
+      "128": "dev-icon-128.png"
+    }
   },
   "icons": {
     "128": "public/dev-icon-128.png"

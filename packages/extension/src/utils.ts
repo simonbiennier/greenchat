@@ -8,17 +8,14 @@ function getText() {
   const chats = document.querySelectorAll(chatQuery)
   if (!chats.length)
     return ""
-  const _numberOfChats = chats.length
+  // const numberOfChats = chats.length
   const texts: string[] = []
 
   chats.forEach((chat, _idx) => {
     const text = chat.textContent?.trim() || ""
     texts.push(text)
-    // console.log(idx, text);
   })
 
-  // console.log(texts.join("\n"));
-  // console.log("Fetching conversations...");
   return texts.join("")
 }
 
@@ -29,4 +26,24 @@ function calculateCarbon(tokens: number) {
   return Math.round(value * 100) / 100
 }
 
-export { calculateCarbon, countTokens, getText, getURL }
+function convertToCarDistance(tokens: number) {
+  const value = (calculateCarbon(tokens) / 250) * 1000 // 250g CO2/km, in meters
+  const rounded = Math.round(value)
+  if (rounded < 1)
+    return "<1 meter"
+  if (rounded === 1)
+    return "1 meter"
+  return `${rounded} meters`
+}
+
+function converToLightBulbTime(tokens: number) {
+  const value = (calculateCarbon(tokens) / 100) * 60 // 0.1kg CO2/h, in minutes
+  const rounded = Math.round(value)
+  if (rounded < 1)
+    return "<1 minute"
+  if (rounded === 1)
+    return "1 minute"
+  return `${rounded} minutes`
+}
+
+export { calculateCarbon, converToLightBulbTime, convertToCarDistance, countTokens, getText, getURL }
