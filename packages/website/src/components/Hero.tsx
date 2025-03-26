@@ -27,9 +27,9 @@ export function Hero() {
       </p>
       <div className="mt-10 flex justify-center items-center gap-x-6">
         <Link href="">
-          <Image alt="Available in the Chrome Web Store" height={58} src="https://developer.chrome.com/static/docs/webstore/branding/image/YT2Grfi9vEBa2wAPzhWa.png" width={206} />
+          <Image alt="Available in the Chrome Web Store" src="https://developer.chrome.com/static/docs/webstore/branding/image/YT2Grfi9vEBa2wAPzhWa.png" width={206} height={58} />
         </Link>
-        <div>
+        {/* <div>
           <Button
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             variant="outline"
@@ -42,7 +42,7 @@ export function Hero() {
             </svg>
             <span className="ml-3">Watch video</span>
           </Button>
-        </div>
+        </div> */}
       </div>
       {/* <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">

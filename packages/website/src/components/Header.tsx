@@ -25,24 +25,18 @@ export function Header() {
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Features</NavLink>
               <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
+              <NavLink href="#faq">FAQ</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
-              {/* <NavLink href="/login">Sign in</NavLink> */}
-            </div>
-            <Button color="slate" href="#" variant="outline">
-              <span>
+              <Button color="slate" href="https://github.com/simonbiennier/greenchat" variant="outline">
                 GitHub
-              </span>
             </Button>
+            </div>
             <Button color="slate" href="#">
-              <span>
                 Download
-              </span>
             </Button>
-
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>
@@ -99,9 +93,7 @@ function MobileNavigation() {
       >
         <MobileNavLink href="#features">Features</MobileNavLink>
         <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
-        <MobileNavLink href="#pricing">Pricing</MobileNavLink>
-        <hr className="m-2 border-slate-300/40" />
-        <MobileNavLink href="/login">Sign in</MobileNavLink>
+        <MobileNavLink href="#faq">FAQ</MobileNavLink>
       </PopoverPanel>
     </Popover>
   )

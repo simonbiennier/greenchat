@@ -116,15 +116,14 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+            Here's how we calculate it.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you'd probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            Because you'd probably be a little confused if we didn't explain.
           </p>
         </div>
-        <FeaturesMobile />
-        <FeaturesDesktop />
+        {/* <FeaturesMobile />
+        <FeaturesDesktop /> */}
       </Container>
     </section>
   )

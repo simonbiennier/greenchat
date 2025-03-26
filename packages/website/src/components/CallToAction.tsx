@@ -6,7 +6,7 @@ import Image from "next/image"
 export function CallToAction() {
   return (
     <section
-      className="relative overflow-hidden bg-lime-600 py-32"
+      className="relative overflow-hidden bg-lime-600 py-16"
       id="get-started-today"
     >
       <Image
