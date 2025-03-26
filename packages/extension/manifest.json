@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "GreenChat",
+  "description": "GreenChat is a plugin that estimates the CO2 emissions of ChatGPT conversations to raise awareness about AI's environmental impact.",
+  "options_ui": {
+    "page": "src/pages/options/index.html"
+  },
+  "action": {
+    "default_popup": "src/pages/popup/index.html",
+    "default_icon": {
+      "32": "icon-32.png",
+      "128": "icon-128.png"
+    }
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "background": {
+    "js": ["src/pages/background/index.ts"],
+    "persistent": false
+  },
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["http://chatgpt.com/*", "https://chatgpt.com/*"],
+      "js": ["src/pages/content/index.tsx"]
+    }
+  ],
+  "devtools_page": "src/pages/devtools/index.html",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "logo.png"
+      ],
+      "matches": ["http://chatgpt.com/*", "https://chatgpt.com/*"]
+    }
+  ]
+}
