@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     default: "GreenChat",
     template: "%s - GreenChat",
   },
+  verification: {
+    google: "TT5Yn-TEiPFBQDhAqDA2NlcGY0GlBro-e50C1FF3H7E"
+  }
 }
 
 const inter = Inter({
