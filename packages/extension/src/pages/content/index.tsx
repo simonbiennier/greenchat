@@ -5,7 +5,7 @@ import "@/assets/styles/tailwind.css"
 let lastText = ""
 
 const containerClass = "relative z-[1] flex max-w-full flex-1 flex-col h-full"
-const containerQuery = `[class='${containerClass}']`
+const containerQuery = `[class*='${containerClass}']`
 function injectBanner() {
   const text = getText()
 
