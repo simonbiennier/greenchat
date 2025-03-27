@@ -119,7 +119,48 @@ export function SecondaryFeatures() {
             Here's how we calculate it.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you'd probably be a little confused if we didn't explain.
+            Estimating ChatGPT's carbon footprint is challenging due to OpenAI's closed-source policy. However, studies suggest energy consumption per query ranges from
+            <strong>0.3 to 3 watt-hours</strong>
+            . According to
+            {" "}
+            <a className="text-lime-600" href="https://www.sciencedirect.com/science/article/pii/S2542435123003653" rel="noopener noreferrer" target="_blank">Alex De Vries</a>
+            , a typical query uses around 3 watt-hours, while
+            {" "}
+            <a className="text-lime-600" href="https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use" rel="noopener noreferrer" target="_blank">Josh You</a>
+            {" "}
+            argues that shorter queries use just 0.3 watt-hours, similar to a Google search.
+          </p>
+          <p className="mt-4 text-lg tracking-tight text-slate-700">
+            The carbon emissions depend on data center energy sources. The U.S. average carbon intensity is
+            {" "}
+            <a className="text-lime-600" href="https://arxiv.org/abs/2104.10350" rel="noopener noreferrer" target="_blank">0.429 kg CO₂e/kWh</a>
+            ,
+            meaning emissions per query range between
+            {" "}
+            {" "}
+            <strong>
+              0.1287g and 1.287g CO
+              <sub>2</sub>
+              e
+            </strong>
+            . Per token, estimates vary from
+            {" "}
+            <strong>
+              0.2145 mg to 0.2574 mg CO
+              <sub>2</sub>
+              e
+            </strong>
+            , based on token length assumptions by De Vries and You.
+          </p>
+          <p className="mt-4 text-lg tracking-tight text-slate-700">
+            Water usage is another factor. According to
+            {" "}
+            <a className="text-lime-600" href="https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-35-WUE-Usage-Guidelines.pdf" rel="noopener noreferrer" target="_blank">The Green Grid</a>
+            , U.S. data centers have an average water usage efficiency (WUE) of 1.8 L/kWh. Based on energy estimates, water consumption per token ranges from
+            {" "}
+            {" "}
+            <strong>0.0001 to 0.0009 mL</strong>
+            .
           </p>
         </div>
         {/* <FeaturesMobile />
@@ -169,7 +210,7 @@ function Features({
   )
 }
 
-function FeaturesDesktop() {
+function _FeaturesDesktop() {
   return (
     <TabGroup className="hidden lg:mt-20 lg:block">
       {({ selectedIndex }) => (
@@ -224,7 +265,7 @@ function FeaturesDesktop() {
   )
 }
 
-function FeaturesMobile() {
+function _FeaturesMobile() {
   return (
     <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
       {features.map(feature => (

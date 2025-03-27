@@ -24,7 +24,7 @@ export function Header() {
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
+              {/* <NavLink href="#testimonials">Testimonials</NavLink> */}
               <NavLink href="#faq">FAQ</NavLink>
             </div>
           </div>
@@ -34,7 +34,7 @@ export function Header() {
                 GitHub
               </Button>
             </div>
-            <Button color="slate" href="#">
+            <Button color="slate" href="https://github.com/simonbiennier/greenchat/releases/tag/v1.0.0" rel="noopener noreferrer" target="_blank">
               Download
             </Button>
             <div className="-mr-1 md:hidden">
@@ -92,7 +92,7 @@ function MobileNavigation() {
         transition
       >
         <MobileNavLink href="#features">Features</MobileNavLink>
-        <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
+        {/* <MobileNavLink href="#testimonials">Testimonials</MobileNavLink> */}
         <MobileNavLink href="#faq">FAQ</MobileNavLink>
       </PopoverPanel>
     </Popover>

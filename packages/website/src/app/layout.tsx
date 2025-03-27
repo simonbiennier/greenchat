@@ -5,7 +5,7 @@ import "@/styles/tailwind.css"
 
 export const metadata: Metadata = {
   description:
-    "GreenChat is a plugin that estimates the CO2 emissions of ChatGPT conversations to raise awareness about the environmental impact of AI.",
+    "GreenChat is a browser extension that estimates CO2 emissions of ChatGPT conversations to raise awareness about the environmental impact of AI.",
   title: {
     default: "GreenChat",
     template: "%s - GreenChat",

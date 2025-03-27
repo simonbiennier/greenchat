@@ -6,52 +6,41 @@ const faqs = [
   [
     {
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      question: "Question?",
+        "Yes.",
+      question: "Is the extension free?",
     },
     {
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      question: "Question?",
+        "Click the download link at the top.",
+      question: "Where can I download this extension?",
     },
     {
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      question: "Question?",
-    },
-  ],
-  [
-    {
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      question: "Question?",
-    },
-    {
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      question: "Question?",
-    },
-    {
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      question: "Question?",
+        "It uses Vite, React, Tailwind and Typescript among others for the extension and Next.js for the website.",
+      question: "What tools were used to build GreenChat?",
     },
   ],
   [
     {
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      question: "Question?",
+        "No, GreenChat does not store or send any conversation data. It only processes text locally to estimate emissions.",
+      question: "Does GreenChat track my conversations?",
     },
     {
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      question: "Question?",
+        "Since OpenAI does not disclose energy usage details, GreenChat relies on third-party research and averages. The estimates are approximations meant to provide awareness, not exact measurements.",
+      question: "How accurate are GreenChat's estimates?",
+    },
+  ],
+  [
+    {
+      answer: "Currently, GreenChat is designed for ChatGPT, but future updates may support other AI platforms",
+      question: "Does GreenChat work with other AI models?",
     },
     {
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      question: "Question?",
+        "Yes.",
+      question: "Is GreenChat safe to use?",
     },
   ],
 ]
@@ -80,9 +69,9 @@ export function Faqs() {
           >
             Frequently asked questions
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
+          {/* <p className="mt-4 text-lg tracking-tight text-slate-700">
             If you can't find it here, ask us.
-          </p>
+          </p> */}
         </div>
         <ul
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"
