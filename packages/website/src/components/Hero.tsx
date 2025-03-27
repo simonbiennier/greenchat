@@ -26,7 +26,7 @@ export function Hero() {
         GreenChat is a plugin that estimates the CO2 emissions of ChatGPT conversations to raise awareness about the environmental impact of AI.
       </p>
       <div className="mt-10 flex justify-center items-center gap-x-6">
-        <Link href="">
+        <Link href="#">
           <Image alt="Available in the Chrome Web Store" src="https://developer.chrome.com/static/docs/webstore/branding/image/YT2Grfi9vEBa2wAPzhWa.png" width={206} height={58} />
         </Link>
         {/* <div>

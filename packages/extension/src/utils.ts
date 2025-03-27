@@ -21,6 +21,14 @@ function getText() {
 
 const getURL = (url: string) => chrome.runtime.getURL(url)
 
+function calculateWater(tokens: number) {
+  const value = tokens * 0.0005
+  const rounded = Math.round(value)
+  if (rounded < 1)
+    return "<1"
+  return rounded
+}
+
 function calculateCarbon(tokens: number) {
   const value = tokens * (0.0002574 + 0.0002145) / 2
   return Math.round(value * 100) / 100
@@ -46,4 +54,4 @@ function converToLightBulbTime(tokens: number) {
   return `${rounded} minutes`
 }
 
-export { calculateCarbon, converToLightBulbTime, convertToCarDistance, countTokens, getText, getURL }
+export { calculateCarbon, calculateWater, converToLightBulbTime, convertToCarDistance, countTokens, getText, getURL }

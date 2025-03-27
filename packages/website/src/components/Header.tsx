@@ -32,10 +32,10 @@ export function Header() {
             <div className="hidden md:block">
               <Button color="slate" href="https://github.com/simonbiennier/greenchat" variant="outline" rel="noopener noreferrer" target="_blank">
                 GitHub
-            </Button>
+              </Button>
             </div>
             <Button color="slate" href="#">
-                Download
+              Download
             </Button>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />

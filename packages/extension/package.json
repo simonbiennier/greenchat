@@ -1,7 +1,7 @@
 {
   "name": "@greenchat/extension",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "private": true,
   "description": "GreenChat is a plugin that estimates the CO2 emissions of ChatGPT conversations to raise awareness about AI's environmental impact.",
   "scripts": {

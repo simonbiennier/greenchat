@@ -1,8 +1,8 @@
 import bulbIcon from "@/assets/img/bulb.png"
 import carIcon from "@/assets/img/car.png"
 import logo from "@/assets/img/logo.png"
-// import waterIcon from "@/assets/img/water.png"
-import { converToLightBulbTime, convertToCarDistance } from "@/utils"
+import waterIcon from "@/assets/img/water.png"
+import { calculateWater, converToLightBulbTime, convertToCarDistance } from "@/utils"
 
 function Popup() {
   const params = new URLSearchParams(window.location.search)
@@ -12,7 +12,7 @@ function Popup() {
     <div className="relative text-center size-full min-h-[600px] min-w-[400px] p-3 overflow-hidden">
       <header className="flex items-center justify-center gap-3">
         <img alt="logo" className="h-10 w-10 pointer-events-none" src={logo} />
-        <h1 className="text-2xl font-bold">GreenChat</h1>
+        <h1 className="text-2xl font-bold text-green">GreenChat</h1>
       </header>
 
       <div className="mt-6 text-left px-4">
@@ -20,10 +20,14 @@ function Popup() {
           Your chat footprint is roughly equivalent to:
         </h2>
         <ul className="space-y-3">
-          {/* <li className="flex items-center gap-3 text-white">
+          <li className="flex items-center gap-3 text-white">
             <img src={waterIcon} alt="Water" className="h-6 w-6" />
-            <span>x litres of water used.</span>
-          </li> */}
+            <span>
+              {calculateWater(tokens)}
+              {" "}
+              mL of water used.
+            </span>
+          </li>
           <li className="flex items-center gap-3 text-white">
             <img src={carIcon} alt="Car" className="h-6 w-6" />
             <span>
@@ -54,10 +58,10 @@ function Popup() {
       </div>
 
       <a
-        href="https://example.com"
+        href="https://greenchat-ai.vercel.app"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute text-lg bottom-16 mx-auto text-lime-400 hover:underline"
+        className="absolute text-lg bottom-16 mx-auto text-green hover:underline"
       >
         Learn more
       </a>

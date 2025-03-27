@@ -99,11 +99,11 @@ export function createBanner(container: Element, text: string) {
   // banner.className = bannerClass
   banner.id = bannerId
 
-  if (container.firstElementChild) {
-    container.firstElementChild.insertAdjacentElement("beforebegin", banner)
+  if (container) {
+    container.insertAdjacentElement("beforebegin", banner)
     createRoot(banner).render(<Banner text={text} />)
   } else {
-    console.error("Container is empty")
+    console.error("Container not found")
   }
 }
 

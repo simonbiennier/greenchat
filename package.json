@@ -1,18 +1,21 @@
 {
   "name": "greenchat",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@10.7.0+sha512.6b865ad4b62a1d9842b61d674a393903b871d9244954f652b8842c2b553c72176b278f64c463e52d40fff8aba385c235c8c9ecf5cc7de4fd78b8bb6d49633ab6",
   "scripts": {
     "lint": "eslint --cache .",
-    "lint:fix": "eslint --cache --fix ."
+    "lint:fix": "eslint --cache --fix .",
+    "build": "cd packages/extension && nr build",
+    "dev": "cd packages/extension && nr dev"
   },
   "workspaces": [
     "packages/*"
   ],
   "dependencies": {
     "@simonbiennier/eslint-config": "^1.0.1",
+    "dev": "^0.1.3",
     "eslint": "^9.23.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2"
