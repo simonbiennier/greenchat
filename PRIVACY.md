@@ -23,6 +23,6 @@ You have the right to:
 ## Changes to this policy
 We may update this privacy policy periodically. Any changes will be posted on this page with a revised date.
 
-## Contact Us
+## Contact us
 If you have any questions about this privacy policy, please contact us through GitHub.
 
