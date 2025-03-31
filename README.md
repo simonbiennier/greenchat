@@ -13,6 +13,13 @@ Download the following tools:
 - [pnpm](https://pnpm.io/)
 - [ni](https://github.com/antfu-collective/ni)
 
+## Installation
+
+1. Download the [launch release](https://github.com/simonbiennier/greenchat/releases/tag/v1.0.0) and unzip it.
+2. Go to chrome://extensions/
+3. Select 'Developer mode'
+4. Click on 'Load unpacked' and select the unzipped folder.
+
 ## Development
 
 1. Clone the repository:
@@ -32,13 +39,6 @@ ni
 ```bash
 nr dev
 ```
-
-## Installation
-
-1. Download the [launch release](https://github.com/simonbiennier/greenchat/releases/tag/v1.0.0) and unzip it.
-2. Go to chrome://extensions/
-3. Select 'Developer mode'
-4. Click on 'Load unpacked' and select the unzipped folder.
 
 ## Contributing
 

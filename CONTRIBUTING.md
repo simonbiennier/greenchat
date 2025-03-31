@@ -11,7 +11,7 @@ In this guide, we'll provide you with the necessary information and guidelines t
 3. Add the `GreenChat` repo as an upstream remote:
 
 ```bash
-git remote add upstream https://github.com/getanteon/anteon
+git remote add upstream https://github.com/simonbiennier/greenchat
 ```
 
 4. We follow Gitflow branching model. Create a feature branch from the `develop` branch:
@@ -56,7 +56,7 @@ When submitting a [bug report](https://github.com/simonbiennier/greenchat/issues
 
 ## Feature requests
 
-When submitting a [feature request](https://github.com/getanteon/anteon/issues), please include:
+When submitting a [feature request](https://github.com/simonbiennier/greenchat/issues), please include:
 
 - A clear and descriptive title.
 - A detailed description of the proposed feature or enhancement, including the rationale behind it and any potential use cases.

@@ -1,4 +1,4 @@
-import { Button } from "@/components/Button"
+// import { Button } from "@/components/Button"
 import { Container } from "@/components/Container"
 // import Image from "next/image"
 // import Link from "next/link"
@@ -29,7 +29,7 @@ export function Hero() {
         {/* <Link href="#">
           <Image alt="Available in the Chrome Web Store" src="https://developer.chrome.com/static/docs/webstore/branding/image/YT2Grfi9vEBa2wAPzhWa.png" width={206} height={58} />
         </Link> */}
-          {/* <Button
+        {/* <Button
             href="https://github.com/simonbiennier/greenchat/releases/tag/v1.0.0" rel="noopener noreferrer" target="_blank" variant="solid"
           >
             Download

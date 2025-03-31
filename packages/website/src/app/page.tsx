@@ -1,4 +1,4 @@
-import { CallToAction } from "@/components/CallToAction"
+// import { CallToAction } from "@/components/CallToAction"
 import { Faqs } from "@/components/Faqs"
 import { Footer } from "@/components/Footer"
 import { Header } from "@/components/Header"
@@ -16,7 +16,7 @@ export default function Home() {
         <Hero />
         <PrimaryFeatures />
         <SecondaryFeatures />
-        <CallToAction />
+        {/* <CallToAction /> */}
         {/* <Testimonials /> */}
         {/* <Pricing /> */}
         <Faqs />
