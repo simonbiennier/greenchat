@@ -34,7 +34,7 @@ export function Header() {
                 GitHub
               </Button>
             </div>
-            <Button color="slate" href="https://github.com/simonbiennier/greenchat/releases/tag/v1.0.0" rel="noopener noreferrer" target="_blank">
+            <Button color="slate" href="https://chromewebstore.google.com/detail/greenchat/ndpiijjfeonckaejbemcbhanmapdpopm" rel="noopener noreferrer" target="_blank">
               Download
             </Button>
             <div className="-mr-1 md:hidden">
