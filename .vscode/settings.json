@@ -23,14 +23,11 @@
 
   "eslint.enable": true,
   "eslint.format.enable": true,
-  "eslint.nodePath": ".yarn/sdks",
-
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
 
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.format.enable": false,
   "typescript.preferences.importModuleSpecifier": "non-relative",
-  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.validate.enable": true,
 
   "javascript.format.enable": false,
