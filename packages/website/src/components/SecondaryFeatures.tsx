@@ -120,7 +120,7 @@ export function SecondaryFeatures() {
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Estimating ChatGPT's carbon footprint is challenging due to OpenAI's closed-source policy. However, studies suggest energy consumption per query ranges from
-            <strong>0.3 to 3 watt-hours</strong>
+            <strong> 0.3 to 3 watt-hours</strong>
             . According to
             {" "}
             <a className="text-lime-600" href="https://www.sciencedirect.com/science/article/pii/S2542435123003653" rel="noopener noreferrer" target="_blank">Alex De Vries</a>

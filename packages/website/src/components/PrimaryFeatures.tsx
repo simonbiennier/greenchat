@@ -23,7 +23,7 @@ const features = [
       "Showing you extra information about your chat footprint.",
     image: screenshotPopup,
     title: "Popup",
-  }
+  },
 ]
 
 export function PrimaryFeatures() {
@@ -54,7 +54,7 @@ export function PrimaryFeatures() {
     >
       <Image
         alt=""
-        className="absolute top-1/2 left-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
+        className="absolute scale-130 top-1/2 left-1/2 max-w-none translate-x-[-50%] translate-y-[-42%]"
         height={1636}
         src={backgroundImage}
         style={{ filter: "hue-rotate(-130deg) brightness(1.1) contrast(0.5)" }}
@@ -79,7 +79,7 @@ export function PrimaryFeatures() {
             src={screenshotBanner}
           />
         </div>
-    </Container>
+      </Container>
     </section>
   )
 }
