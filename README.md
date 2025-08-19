@@ -15,10 +15,10 @@ Download the following tools:
 
 ## Installation
 
-1. Download the [launch release](https://github.com/simonbiennier/greenchat/releases/tag/v1.0.0) and unzip it.
+1. Download the [latest release](https://github.com/simonbiennier/greenchat/releases/) and unzip it.
 2. Go to chrome://extensions/
 3. Select 'Developer mode'
-4. Click on 'Load unpacked' and select the unzipped folder.
+4. Click on 'Load unpacked' and select the unzipped `dist` folder.
 
 ## Development
 
