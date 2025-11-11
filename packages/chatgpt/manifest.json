@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GreenChat (ChatGPT)",
-  "description": "GreenChat (ChatGPT) is an extension that estimates CO2 emissions of ChatGPT conversations to raise awareness about AI's environmental impact.",
+  "description": "GreenChat (ChatGPT) estimates CO2 emissions of ChatGPT conversations to raise awareness about AI's environmental impact.",
   "options_ui": {
     "page": "src/pages/options/index.html"
   },

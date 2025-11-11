@@ -1,9 +1,9 @@
 {
   "name": "@greenchat/copilot",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
-  "description": "GreenChat (Copilot) is a browser extension that estimates CO2 emissions of Microsoft Copilot conversations to raise awareness about AI's environmental impact.",
+  "description": "GreenChat (Copilot) estimates CO2 emissions of Copilot conversations to raise awareness about AI's environmental impact.",
   "scripts": {
     "build": "vite build --config vite.config.chrome.ts",
     "build:chrome": "vite build --config vite.config.chrome.ts",
