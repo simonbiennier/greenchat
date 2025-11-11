@@ -106,12 +106,12 @@ const features: Array<Feature> = [
   },
 ]
 
-export function SecondaryFeatures() {
+export function HowItsCalculated() {
   return (
     <section
       aria-label="Features for simplifying everyday business tasks"
       className="pt-20 pb-14 sm:pt-32 sm:pb-20 lg:pb-32"
-      id="secondary-features"
+      id="how-its-calculated"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
@@ -119,7 +119,7 @@ export function SecondaryFeatures() {
             Here's how we calculate it.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Estimating ChatGPT's carbon footprint is challenging due to OpenAI's closed-source policy. However, studies suggest energy consumption per query ranges from
+            Estimating carbon footprint of AI models is challenging due to their closed-source policy. However, studies suggest energy consumption per query ranges from
             <strong> 0.3 to 3 watt-hours</strong>
             . According to
             {" "}

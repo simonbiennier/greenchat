@@ -1,6 +1,4 @@
 import { Container } from "@/components/Container"
-import backgroundImage from "@/images/background-faqs.jpg"
-import Image from "next/image"
 
 const faqs = [
   [
@@ -28,7 +26,7 @@ const faqs = [
     },
     {
       answer:
-        "Since OpenAI does not disclose energy usage details, GreenChat relies on third-party research and averages. The estimates are approximations meant to provide awareness, not exact measurements.",
+        "Since AI models do not disclose energy usage details, GreenChat relies on third-party research and averages. The estimates are approximations meant to provide awareness, not exact measurements.",
       question: "How accurate are GreenChat's estimates?",
     },
   ],

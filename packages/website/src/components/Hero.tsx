@@ -1,13 +1,12 @@
 // import { Button } from "@/components/Button"
 import { Container } from "@/components/Container"
-import Image from "next/image"
-import Link from "next/link"
 
 export function Hero() {
   return (
     <Container className="pt-20 pb-16 text-center lg:pt-32">
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-        It's time to think {" "}
+        It's time to think
+        {" "}
         <span className="relative whitespace-nowrap text-green">
           <svg
             aria-hidden="true"
@@ -21,18 +20,8 @@ export function Hero() {
         </span>
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        GreenChat is a browser extension that estimates CO2 emissions of ChatGPT conversations to raise awareness about the environmental impact of AI.
+        GreenChat is a browser extension that estimates CO2 emissions of assistant conversations to raise awareness about the environmental impact of AI.
       </p>
-      <Link href="https://chromewebstore.google.com/detail/greenchat/ndpiijjfeonckaejbemcbhanmapdpopm" rel="noopener noreferrer" target="_blank">
-          <Image className="mx-auto pt-10" alt="Available in the Chrome Web Store" src="https://developer.chrome.com/static/docs/webstore/branding/image/YT2Grfi9vEBa2wAPzhWa.png" width={206} height={58} />
-        </Link>
-      <div className="pt-50">
-        {/* <Button
-            href="https://github.com/simonbiennier/greenchat/releases/tag/v1.0.0" rel="noopener noreferrer" target="_blank" variant="solid"
-          >
-            Download
-          </Button> */}
-      </div>
     </Container>
   )
 }

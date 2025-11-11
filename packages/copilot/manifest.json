@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "GreenChat (Copilot)",
+  "description": "GreenChat (Copilot) is an extension that estimates CO2 emissions of Microsoft Copilot conversations to raise awareness about AI's environmental impact.",
+  "options_ui": {
+    "page": "src/pages/options/index.html"
+  },
+  "action": {
+    "default_state": "disabled",
+    "default_icon": {
+      "32": "icon-32.png",
+      "128": "icon-128.png"
+    }
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://m365.cloud.microsoft/chat*",
+        "https://m365.cloud.microsoft/chat*"
+      ],
+      "js": ["src/pages/content/index.tsx"]
+    }
+  ]
+}

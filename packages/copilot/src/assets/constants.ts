@@ -1,0 +1,4 @@
+const EXTENSION_ID = "greenpilot"
+const EXTENSION_PREFIX = `_${EXTENSION_ID}`
+
+export { EXTENSION_ID, EXTENSION_PREFIX }

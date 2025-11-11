@@ -1,5 +1,5 @@
 {
-  "name": "GreenChat (Dev)",
+  "name": "GreenChat (dev)",
   "action": {
     "default_popup": "src/pages/popup/index.html",
     "default_state": "disabled",
