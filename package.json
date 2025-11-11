@@ -7,9 +7,7 @@
   "description": "GreenChat is a browser extension that estimates CO2 emissions of ChatGPT conversations to raise awareness about AI's environmental impact.",
   "scripts": {
     "lint": "eslint --cache .",
-    "lint:fix": "eslint --cache --fix .",
-    "build": "cd packages/extension && nr build",
-    "dev": "cd packages/extension && nr dev"
+    "lint:fix": "eslint --cache --fix ."
   },
   "workspaces": [
     "packages/*"

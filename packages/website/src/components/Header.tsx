@@ -24,9 +24,9 @@ export function Header() {
             <Button color="slate" href="https://chromewebstore.google.com/detail/greenchat/ndpiijjfeonckaejbemcbhanmapdpopm" rel="noopener noreferrer" target="_blank">
               Download for ChatGPT
             </Button>
-            <Button color="slate" href="#" rel="noopener noreferrer" target="_blank">
+            {/* <Button color="slate" href="#" rel="noopener noreferrer" target="_blank">
               Download for Copilot
-            </Button>
+            </Button> */}
           </div>
         </nav>
       </Container>

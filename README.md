@@ -2,7 +2,7 @@
 
 GreenChat is a browser extension that estimates CO<sub>2</sub> emissions of ChatGPT conversations to raise awareness about AI's environmental impact.
 
-This repository contains the source code for the Chrome extension (in `packages/extension`) and the website (in `packages/website`).
+This repository contains the source code for the ChatGPT Chrome extension (in `packages/chatgpt`) and the website (in `packages/website`).
 
 ## Getting started
 
@@ -45,4 +45,5 @@ nr dev
 See our [contribution guide](CONTRIBUTING.md) and please follow the [code of conduct](CODE_OF_CONDUCT.md) in all your interactions with the project.
 
 ## License
+
 Licensed under the [MIT License](LICENSE).
