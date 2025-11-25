@@ -22,8 +22,7 @@ export function Footer() {
             {" "}
             {new Date().getFullYear()}
             {" "}
-            GreenChat. All rights
-            reserved.
+            GreenChat. All rights reserved.
           </p>
         </div>
       </Container>

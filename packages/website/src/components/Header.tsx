@@ -22,11 +22,11 @@ export function Header() {
               </Button>
             </div>
             <Button color="slate" href="https://chromewebstore.google.com/detail/greenchat/ndpiijjfeonckaejbemcbhanmapdpopm" rel="noopener noreferrer" target="_blank">
-              Download for ChatGPT
+              Download for ChatGPT (Chrome)
             </Button>
-            {/* <Button color="slate" href="#" rel="noopener noreferrer" target="_blank">
-              Download for Copilot
-            </Button> */}
+            <Button color="slate" href="https://microsoftedge.microsoft.com/addons/detail/greenchat-copilot/nlkcbigjdpbhnigcemdneijcindalfao" rel="noopener noreferrer" target="_blank">
+              Download for Copilot (Edge)
+            </Button>
           </div>
         </nav>
       </Container>

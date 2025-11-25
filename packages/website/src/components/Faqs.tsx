@@ -3,42 +3,36 @@ import { Container } from "@/components/Container"
 const faqs = [
   [
     {
-      answer:
-        "Yes.",
       question: "Is the extension free?",
+      answer: "Yes.",
     },
     {
-      answer:
-        "Click the download link at the top.",
       question: "Where can I download this extension?",
+      answer: "Click the download link at the top.",
     },
     {
-      answer:
-        "It uses Vite, React, Tailwind and Typescript among others for the extension and Next.js for the website.",
       question: "What tools were used to build GreenChat?",
+      answer: "It uses React, Tailwind and Typescript among others for the extension and Next.js for the website.",
     },
   ],
   [
     {
-      answer:
-        "No, GreenChat does not store or send any conversation data. It only processes text locally to estimate emissions.",
       question: "Does GreenChat track my conversations?",
+      answer: "No, GreenChat does not store or send any conversation data. It only processes text locally to estimate emissions.",
     },
     {
-      answer:
-        "Since AI models do not disclose energy usage details, GreenChat relies on third-party research and averages. The estimates are approximations meant to provide awareness, not exact measurements.",
       question: "How accurate are GreenChat's estimates?",
+      answer: "Since AI models do not disclose energy usage details, GreenChat relies on third-party research and averages. The estimates are approximations meant to provide awareness, not exact measurements.",
     },
   ],
   [
     {
-      answer: "Currently, GreenChat is designed for ChatGPT, but future updates may support other AI platforms",
       question: "Does GreenChat work with other AI models?",
+      answer: "Currently, GreenChat is available for ChatGPT (on the Chrome Web Store) and Copilot (on the Edge store), but future updates may support other AI or browser platforms.",
     },
     {
-      answer:
-        "Yes.",
       question: "Is GreenChat safe to use?",
+      answer: "Yes.",
     },
   ],
 ]
