@@ -1,5 +1,3 @@
-import Browser from "webextension-polyfill";
-
 // Browser
 //   .devtools
 //   .panels

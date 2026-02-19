@@ -25,10 +25,10 @@ const variantStyles = {
 }
 
 type ButtonProps = (
-  | (Omit<React.ComponentPropsWithoutRef<"button">, "color"> & {
+  | (Omit<ComponentPropsWithoutRef<"button">, "color"> & {
     href?: undefined
   })
-  | Omit<React.ComponentPropsWithoutRef<typeof Link>, "color">
+  | Omit<ComponentPropsWithoutRef<typeof Link>, "color">
   ) &
   (
     | {

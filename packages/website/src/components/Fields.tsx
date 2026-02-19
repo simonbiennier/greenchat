@@ -1,3 +1,4 @@
+import type { ComponentPropsWithoutRef, ReactNode } from "react"
 import { clsx } from "clsx"
 import { useId } from "react"
 
@@ -8,7 +9,7 @@ export function SelectField({
   className,
   label,
   ...props
-}: Omit<React.ComponentPropsWithoutRef<"select">, "id"> & { label: string }) {
+}: Omit<ComponentPropsWithoutRef<"select">, "id"> & { label: string }) {
   const id = useId()
 
   return (
@@ -24,7 +25,7 @@ export function TextField({
   label,
   type = "text",
   ...props
-}: Omit<React.ComponentPropsWithoutRef<"input">, "id"> & { label: string }) {
+}: Omit<ComponentPropsWithoutRef<"input">, "id"> & { label: string }) {
   const id = useId()
 
   return (
@@ -35,7 +36,7 @@ export function TextField({
   )
 }
 
-function Label({ children, id }: { children: React.ReactNode, id: string }) {
+function Label({ children, id }: { children: ReactNode, id: string }) {
   return (
     <label
       className="mb-3 block text-sm font-medium text-gray-700"

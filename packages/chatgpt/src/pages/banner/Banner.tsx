@@ -1,8 +1,8 @@
 import type { FC } from "react"
-import { EXTENSION_PREFIX } from "@/assets/constants"
-import { calculateCarbon, countTokens, getURL } from "@/utils"
 import { useState } from "react"
 import { createRoot } from "react-dom/client"
+import { EXTENSION_PREFIX } from "@/assets/constants"
+import { calculateCarbon, countTokens, getURL } from "@/utils"
 
 interface BannerProps { text: string }
 const Banner: FC<BannerProps> = ({ text }) => {

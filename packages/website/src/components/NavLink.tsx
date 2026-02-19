@@ -4,7 +4,7 @@ export function NavLink({
   children,
   href,
 }: {
-  children: React.ReactNode
+  children: ReactNode
   href: string
 }) {
   return (

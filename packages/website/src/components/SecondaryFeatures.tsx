@@ -1,20 +1,21 @@
 "use client"
 
 import type { ImageProps } from "next/image"
-import { Container } from "@/components/Container"
-import screenshotContacts from "@/images/screenshots/contacts.png"
-import screenshotInventory from "@/images/screenshots/inventory.png"
-import screenshotProfitLoss from "@/images/screenshots/profit-loss.png"
+import type { ComponentPropsWithoutRef, ComponentType, ReactNode } from "react"
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react"
 import { clsx } from "clsx"
 import Image from "next/image"
 import { useId } from "react"
+import { Container } from "@/components/Container"
+import screenshotContacts from "@/images/screenshots/contacts.png"
+import screenshotInventory from "@/images/screenshots/inventory.png"
+import screenshotProfitLoss from "@/images/screenshots/profit-loss.png"
 
 interface Feature {
   description: string
-  icon: React.ComponentType
+  icon: ComponentType
   image: ImageProps["src"]
-  name: React.ReactNode
+  name: ReactNode
   summary: string
 }
 
@@ -175,7 +176,7 @@ function Features({
   feature,
   isActive,
   ...props
-}: React.ComponentPropsWithoutRef<"div"> & {
+}: ComponentPropsWithoutRef<"div"> & {
   feature: Feature
   isActive: boolean
 }) {

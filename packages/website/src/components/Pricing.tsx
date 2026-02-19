@@ -1,6 +1,6 @@
+import { clsx } from "clsx"
 import { Button } from "@/components/Button"
 import { Container } from "@/components/Container"
-import { clsx } from "clsx"
 
 export function Pricing() {
   return (
@@ -76,7 +76,7 @@ export function Pricing() {
 function CheckIcon({
   className,
   ...props
-}: React.ComponentPropsWithoutRef<"svg">) {
+}: ComponentPropsWithoutRef<"svg">) {
   return (
     <svg
       aria-hidden="true"
@@ -164,7 +164,7 @@ function Plan({
   )
 }
 
-function SwirlyDoodle(props: React.ComponentPropsWithoutRef<"svg">) {
+function SwirlyDoodle(props: ComponentPropsWithoutRef<"svg">) {
   return (
     <svg
       aria-hidden="true"

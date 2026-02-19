@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     template: "%s - GreenChat",
   },
   verification: {
-    google: "TT5Yn-TEiPFBQDhAqDA2NlcGY0GlBro-e50C1FF3H7E"
-  }
+    google: "TT5Yn-TEiPFBQDhAqDA2NlcGY0GlBro-e50C1FF3H7E",
+  },
 }
 
 const inter = Inter({
@@ -30,7 +30,7 @@ const lexend = Lexend({
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <html

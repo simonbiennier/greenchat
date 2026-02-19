@@ -1,9 +1,9 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/Button"
 import { Container } from "@/components/Container"
 import { Logo } from "@/components/Logo"
-import Link from "next/link"
 
 export function Header() {
   return (

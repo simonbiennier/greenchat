@@ -1,8 +1,8 @@
 import type { ComponentPropsWithoutRef } from "react"
 
-import logo from "@/images/logo.png"
 import { clsx } from "clsx"
 import Image from "next/image"
+import logo from "@/images/logo.png"
 
 export function Logo(props: ComponentPropsWithoutRef<"div">) {
   return (
