@@ -13,10 +13,12 @@
     "packages/*"
   ],
   "dependencies": {
-    "@simonbiennier/eslint-config": "^1.0.1",
+    "@simonbiennier/eslint-config": "^1.2.2",
     "dev": "^0.1.3",
-    "eslint": "^9.23.0",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.2"
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.23.0"
   }
 }
