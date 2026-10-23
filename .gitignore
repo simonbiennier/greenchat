@@ -1,1 +1,6 @@
 node_modules
+dist_chrome
+dist_firefox
+.next
+out
+next-env.d.ts
