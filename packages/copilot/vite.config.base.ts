@@ -10,7 +10,7 @@ import manifest from "./manifest.json"
 import pkg from "./package.json"
 
 // eslint-disable-next-line node/prefer-global/process
-const isDev = process.env.__DEV__ === "true"
+const isDev = process.argv.includes("--watch")
 export const baseManifest = {
   ...manifest,
   version: pkg.version,

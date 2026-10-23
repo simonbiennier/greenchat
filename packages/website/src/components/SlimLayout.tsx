@@ -1,3 +1,4 @@
+import type { ReactNode } from "react"
 import Image from "next/image"
 import backgroundImage from "@/images/background-auth.jpg"
 

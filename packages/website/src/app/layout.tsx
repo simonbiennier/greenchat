@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import type { ReactNode } from "react"
 import { clsx } from "clsx"
 import { Inter, Lexend } from "next/font/google"
 import "@/styles/tailwind.css"

@@ -1,3 +1,4 @@
+import type { ComponentPropsWithoutRef } from "react"
 import Image from "next/image"
 import { Container } from "@/components/Container"
 import avatarImage1 from "@/images/avatars/avatar-1.png"
