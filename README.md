@@ -1,48 +1,52 @@
 # GreenChat
 
-GreenChat is a browser extension that estimates CO<sub>2</sub> emissions of ChatGPT conversations to raise awareness about AI's environmental impact.
+GreenChat is a browser extension that estimates CO<sub>2</sub> emissions of AI chat conversations to raise awareness about AI's environmental impact.
 
-This repository contains the source code for the ChatGPT Chrome extension (in `packages/chatgpt`) and the website (in `packages/website`).
+This repository contains:
 
-## Getting started
-
-Download the following tools:
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Node.js](https://nodejs.org/en/)
-- [pnpm](https://pnpm.io/)
-- [ni](https://github.com/antfu-collective/ni)
+- `packages/chatgpt`: the ChatGPT extension ([Chrome Web Store](https://chromewebstore.google.com/detail/greenchat/ndpiijjfeonckaejbemcbhanmapdpopm))
+- `packages/copilot`: the Microsoft 365 Copilot extension ([Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/greenchat-copilot/nlkcbigjdpbhnigcemdneijcindalfao))
+- `packages/website`: the [website](https://greenchat-ai.vercel.app)
 
 ## Installation
 
+Install GreenChat from the [Chrome Web Store](https://chromewebstore.google.com/detail/greenchat/ndpiijjfeonckaejbemcbhanmapdpopm) or [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/greenchat-copilot/nlkcbigjdpbhnigcemdneijcindalfao).
+
+To install manually:
+
 1. Download the [latest release](https://github.com/simonbiennier/greenchat/releases/) and unzip it.
-2. Go to chrome://extensions/
-3. Select 'Developer mode'
-4. Click on 'Load unpacked' and select the unzipped `dist` folder.
+2. Go to `chrome://extensions/`.
+3. Enable 'Developer mode'.
+4. Click 'Load unpacked' and select the unzipped `dist` folder.
 
 ## Development
 
-1. Clone the repository:
+Requires [Node.js](https://nodejs.org/) and [pnpm](https://pnpm.io/).
 
 ```bash
 git clone https://github.com/simonbiennier/greenchat.git
+cd greenchat
+pnpm install
 ```
 
-2. Install the dependencies:
+Build an extension in watch mode, then load its `dist_chrome` or `dist_firefox` folder as an unpacked extension:
 
 ```bash
-ni
+pnpm --filter @greenchat/chatgpt dev           # or dev:firefox
+pnpm --filter @greenchat/copilot dev           # or dev:firefox
 ```
 
-3. Start the development server:
+Run the website locally:
 
 ```bash
-nr dev
+pnpm --filter @greenchat/website dev
 ```
+
+Production builds use `build` (or `build:firefox`) in place of `dev`. Lint everything with `pnpm lint`.
 
 ## Contributing
 
-See our [contribution guide](CONTRIBUTING.md) and please follow the [code of conduct](CODE_OF_CONDUCT.md) in all your interactions with the project.
+See the [contribution guide](CONTRIBUTING.md) and please follow the [code of conduct](CODE_OF_CONDUCT.md) in all your interactions with the project.
 
 ## License
 

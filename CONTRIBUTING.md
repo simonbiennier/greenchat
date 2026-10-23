@@ -14,19 +14,19 @@ In this guide, we'll provide you with the necessary information and guidelines t
 git remote add upstream https://github.com/simonbiennier/greenchat
 ```
 
-4. We follow Gitflow branching model. Create a feature branch from the `develop` branch:
+4. Create a feature branch from `main`:
 
 ```bash
-git checkout -b feature/FEATURE_NAME develop
+git checkout -b feature/FEATURE_NAME main
 ```
 
 ## Submitting changes
 
 Before submitting a [pull request (PR)](https://github.com/simonbiennier/greenchat/pulls) with your changes, please make sure you follow these guidelines:
 
-1. Ensure your code is well-formatted and follows the established coding style for this project (e.g., proper indentation, naming conventions, etc.).
+1. Run `pnpm lint` and make sure it passes.
 
-2. Write unit tests for any new functionality or bug fixes. Ensure that all tests pass before submitting your PR.
+2. Make sure the packages you changed still build (`pnpm --filter <package> build`).
 
 3. Update the [README.md](./README.md) file according to your changes.
 
@@ -37,12 +37,12 @@ Before submitting a [pull request (PR)](https://github.com/simonbiennier/greench
 6. Rebase your branch with the latest upstream changes before submitting your PR:
 
 ```bash
-git pull --rebase upstream master
+git pull --rebase upstream main
 ```
 
-7. Create a pull request (PR) against the `develop` branch.
+7. Create a pull request (PR) against the `main` branch.
 
-After submitting your PR, our team will review your changes. We may ask for revisions or provide feedback before merging your changes into the master branch. Your patience and cooperation are greatly appreciated.
+After submitting your PR, we will review your changes. We may ask for revisions or provide feedback before merging your changes into `main`. Your patience and cooperation are greatly appreciated.
 
 ## Bug reports
 
@@ -50,8 +50,8 @@ When submitting a [bug report](https://github.com/simonbiennier/greenchat/issues
 
 - A clear and descriptive title.
 - A detailed description of the issue, including the steps to reproduce the bug.
-- Any relevant information about your environment, such as the OS, Go version, and configuration.
-- If possible, attach a minimal code sample or test case that demonstrates the issue.
+- Any relevant information about your environment, such as the OS, browser and browser version, and which extension (ChatGPT or Copilot) you use.
+- If possible, attach a minimal example that demonstrates the issue.
 - If possible, attach a screenshot or animated GIF that demonstrates the issue.
 
 ## Feature requests
@@ -62,6 +62,6 @@ When submitting a [feature request](https://github.com/simonbiennier/greenchat/i
 - A detailed description of the proposed feature or enhancement, including the rationale behind it and any potential use cases.
 - If possible, provide examples or mockups to help illustrate your proposal.
 
-## 📜 Code of Conduct
+## Code of Conduct
 
 By participating in this project, you agree to abide by our [Code of Conduct](./CODE_OF_CONDUCT.md). Please read it carefully and ensure that your contributions and interactions with the community adhere to its principles.

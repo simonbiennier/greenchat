@@ -1,30 +1,20 @@
 # Privacy policy
 
-_Last updated: 27-03-2025_
+_Last updated: 23-10-2026_
 
 ## Introduction
 
-Welcome to GreenChat. Your privacy is important to us. This privacy policy explains how we collect, use, and protect your information when you use our services.
+This privacy policy explains what data the GreenChat browser extensions and website handle.
 
 ## Information we collect
 
-We don't collect any personal information.
+None. The extensions estimate emissions locally in your browser by reading the conversation on the page you are viewing. Nothing is stored, and no data is sent to us or to any third party.
 
-## Data protection
-
-We take appropriate security measures to protect your data from unauthorised access, alteration, or disclosure.
+The website uses no cookies or analytics. Its host, Vercel, may keep standard server logs (such as IP addresses) under its own [privacy policy](https://vercel.com/legal/privacy-policy).
 
 ## Third-party sharing
 
-We do not sell or share your personal information with third parties, except when required by law or necessary to provide our services (e.g., service providers).
-
-## Your rights
-
-You have the right to:
-
-- Access, update, or delete your personal data.
-- Opt out of certain data processing activities.
-- Request a copy of the data we hold about you.
+We have no data to sell or share.
 
 ## Changes to this policy
 
@@ -32,4 +22,4 @@ We may update this privacy policy periodically. Any changes will be posted on th
 
 ## Contact us
 
-If you have any questions about this privacy policy, please contact us through GitHub.
+If you have any questions about this privacy policy, please [open an issue](https://github.com/simonbiennier/greenchat/issues) on GitHub.
